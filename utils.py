@@ -90,22 +90,3 @@ def calc_AUC(seq_abnormal, seq_normal, seg_len = 1, print_auc = True):
     if print_auc:
         print('length %d: AUC = %.3f' % (seg_len, auc))
     return auc
-
-def write_results_to_file(filename, caption, data):
-    with open(filename, "a") as myfile:
-        myfile.write(caption + ' = [')
-        for val in data:
-            myfile.write(str(val))
-            myfile.write(' ')
-        myfile.write(']\n')
-def write_weights_to_file(filename, data):
-    with open(filename, "a") as myfile:
-        myfile.write(str(data.shape) + '\n[')
-        for n_row in range(data.shape[0]):
-            myfile.write('\n')
-            for val in data[n_row,:]:
-                myfile.write(str(val))
-                myfile.write(' ')
-            if n_row != data.shape[0] - 1:
-                myfile.write(';...')
-        myfile.write(']\n')
