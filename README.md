@@ -1,5 +1,5 @@
 # skeleton-AEs
-An implementation of the paper "Estimating skeleton-based gait abnormality index by sparse deep auto-encoder"
+An implementation of the paper [Estimating skeleton-based gait abnormality index by sparse deep auto-encoder](https://ieeexplore.ieee.org/document/8465714)
 
 ## Requirements
 * Python
